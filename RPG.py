@@ -116,7 +116,7 @@ class Personagem():
             #posição antiga do player
             mapa[player_y][player_x] = " "
             mapa[player_y+moverxy[1]][player_x+moverxy[0]] = "p"
-            self.position = [player_y+moverxy[1], player_x+moverxy[0]]
+            self.position = [player_y+moverxy[0], player_x+moverxy[1]]
 
         return [mover_para, [player_x+moverxy[0], player_y+moverxy[1]]]
 
@@ -554,7 +554,7 @@ msg_personalizada = ""
 keys = ["'","e","w","a","s","d"]
 
 while True:
-    tecla_pressionada = input("")[0]
+    tecla_pressionada = input("")
 
     if tecla_pressionada != "":
         colisão = " "
@@ -623,7 +623,6 @@ while True:
             print("W, A, S e D para se mover.")
             print("E para remover algo do inventário.")
             print("' para configurações.")
-
 
 
     time.sleep(0.1)
