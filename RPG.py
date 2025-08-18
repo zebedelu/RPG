@@ -554,7 +554,7 @@ msg_personalizada = ""
 keys = ["'","e","w","a","s","d"]
 
 while True:
-    tecla_pressionada = input("")
+    tecla_pressionada = input("")[0]
 
     if tecla_pressionada != "":
         colisão = " "
@@ -623,6 +623,7 @@ while True:
             print("W, A, S e D para se mover.")
             print("E para remover algo do inventário.")
             print("' para configurações.")
+
 
 
     time.sleep(0.1)
